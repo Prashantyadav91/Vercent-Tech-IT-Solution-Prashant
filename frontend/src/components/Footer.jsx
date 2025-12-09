@@ -65,7 +65,7 @@ const Footer = () => {
             <div className='flex flex-col gap-3'>
               <div className='flex gap-2'>
                 <span>&#128232;</span>
-                <p>Info@vercenttechit.com</p>
+                <p>info@vercenttechit.com</p>
               </div>
               <div className='flex gap-2'>
                 <span>&#128232;</span>

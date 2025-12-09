@@ -55,7 +55,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <a href='mailto:yadavshashanksir9@gmail.com' className='text-xl bg-blue-500 py-3 px-10 text-white hidden md:flex  items-center justify-center rounded-lg'>Contact us</a>
+        <a href='mailto:info@vercenttechit.com' className='text-xl bg-blue-500 py-3 px-10 text-white hidden md:flex  items-center justify-center rounded-lg'>Contact us</a>
 
         <div onClick={handleClick} className="flex md:hidden cursor-pointer text-2xl">
           &#9776;
@@ -81,7 +81,7 @@ const Navbar = () => {
               <li><NavLink to='/contact' className={({ isActive }) => isActive ? 'text-blue-400' : 'text-black'}>Contact us</NavLink> </li>
               <li><NavLink to='/faqs' className={({ isActive }) => isActive ? 'text-blue-400' : 'text-black'}>FAQs</NavLink> </li>
             </ul>
-            <a href='mailto:yadavshashanksir9@gmail.com' className='text-xl bg-blue-900 p-2 text-white flex items-center justify-center rounded-lg'>Contact us</a>
+            <a href='mailto:info@vercenttechit.com' className='text-xl bg-blue-900 p-2 text-white flex items-center justify-center rounded-lg'>Contact us</a>
           </div>
         </div>
       }
