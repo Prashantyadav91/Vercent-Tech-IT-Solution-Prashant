@@ -109,7 +109,7 @@ const FAQs = () => {
 
           <details >
             <summary className='text-xl font-semibold bg-[#CFFF87] p-5 cursor-pointer'>1. How does the Vercent Tech-IT process work?</summary>
-            <p className='text-xl ml-2'>Icosys Tech-IT process works on five crucial areas. Let me take you through each one of them;</p>
+            <p className='text-xl ml-2'>Vercent Tech-IT process works on five crucial areas. Let me take you through each one of them;</p>
             <div className='flex flex-col gap-3 p-3 md:p-5'>
 
               <ul className='list-disc pl-3 md:pl-5 flex flex-col gap-2 text-xl'>
