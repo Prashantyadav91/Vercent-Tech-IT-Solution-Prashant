@@ -38,7 +38,7 @@ const Contact = () => {
                 {/* <i class='fa-solid fa-phone'></i> */}
                 <span >&#128222;</span>
               </div>
-              <p className="text-2xl">+1 (201) 8392986</p>
+              <p className="text-2xl">+1 (201) 839-2986</p>
             </div>
 
             <div className="flex items-center gap-5">
