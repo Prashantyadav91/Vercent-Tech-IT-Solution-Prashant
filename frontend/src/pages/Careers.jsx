@@ -63,8 +63,8 @@ const Careers = () => {
       <div className='w-full p-3'>
         <div className='my-10 bg-blue-400 text-white p-10 flex items-center flex-col gap-7 w-ful md:w-[80%] mx-auto rounded-xl'>
           <h1 className='text-xl md:text-3xl font-semibold'>Start Your Journey With Us</h1>
-          <p className='text-center text-xl'>Send your resume and portfolio to <u><b>info@vercenttechit.com</b></u> and take the next step in your IT career.</p>
-          <a className='bg-white text-blue-700 py-3 px-5 rounded-lg text-xl font-semibold' href="mailto:info@vercenttechit.com">Apply Today</a>
+          <p className='text-center text-xl'>Send your resume and portfolio to <u><b>shashanky@vercenttechit.com</b></u> and take the next step in your IT career.</p>
+          <a className='bg-white text-blue-700 py-3 px-5 rounded-lg text-xl font-semibold' href="mailto:shashanky@vercenttechit.com">Apply Today</a>
         </div>
       </div>
 
