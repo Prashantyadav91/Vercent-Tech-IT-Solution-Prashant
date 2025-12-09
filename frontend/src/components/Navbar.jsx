@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import assets from '../assets/assets';
 
 const Navbar = () => {
-  const [nav, setNav] = useState('home')
+  // const [nav, setNav] = useState('home')
   const [extendNav, setExtendNav] = useState(false);
   const handleClick = () => {
     setExtendNav(!extendNav);
@@ -58,15 +58,15 @@ const Navbar = () => {
         <a href='mailto:yadavshashanksir9@gmail.com' className='text-xl bg-blue-500 py-3 px-10 text-white hidden md:flex  items-center justify-center rounded-lg'>Contact us</a>
 
         <div onClick={handleClick} className="flex md:hidden cursor-pointer text-2xl">
-          <i class="fa-solid fa-bars"></i>
+          &#9776;
         </div>
 
       </div>
       {
         extendNav &&
         <div className='w-[45%] h-screen bg-white fixed top-0 right-0 z-20 shadow-custom'>
-          <div className='p-5 text-2xl'>
-            <i onClick={handleClick} class="fa-solid fa-xmark"></i>
+          <div className='p-5 text-2xl cursor-pointer '>
+            <p onClick={handleClick}>&#10006;</p>
           </div>
           <div className="mt-10 flex flex-col justify-between h-[83vh] p-2 md:hidden">
             <ul className='flex flex-col gap-10 mx-auto w-[80%] text-2xl cursor-pointer'>

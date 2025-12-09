@@ -29,40 +29,43 @@ const Contact = () => {
             <h1 className="text-3xl font-bold ">Address</h1>
 
             <div className="flex flex-col gap-5 md:gap-10">
-              <p className="text-2xl">1370 Ontario St Cleveland, Ohio</p>
+              <p className="text-2xl">257 Cornelison Avenue, Jersey City, New Jersey 07302</p>
               <p className="text-2xl">Block-N, Govind Nagar, Kanpur, Uttar Pradesh - 208006</p>
             </div>
 
             <div className="flex items-center gap-5">
               <div className="text-2xl">
-                <i class='fa-solid fa-phone'></i>
+                <span >&#128222;</span>
               </div>
               <p className="text-2xl">+1 2364848545 (Canada)</p>
             </div>
 
             <div className="flex items-center gap-5">
               <div className="text-2xl">
-                <i class='fa-solid fa-phone'></i>
+                {/* <i class='fa-solid fa-phone'></i> */}
+                <span >&#128222;</span>
               </div>
               <p className="text-2xl">+1 (236) 305-8514 (USA)</p>
             </div>
 
             <div className="flex items-center gap-5">
               <div className="text-2xl">
-                <i class='fa-solid fa-envelope'></i>
+                <span>&#128232;</span>
               </div>
-              <p className="text-2xl break-words md:break-normal overflow-hidden text-wrap">
-                yadavshashank9@gmail.com
+              <p className="text-2xl break-word md:break-normal overflow-hidden text-wrap">
+                Info@vercenttechit.com
               </p>
 
             </div>
 
             <div className="flex items-center gap-5">
               <div className="text-2xl">
-                <i class='fa-solid fa-envelope'></i>
+                
+                <span>&#128232;</span>
+
               </div>
-              <p className="text-2xl break-words md:break-normal overflow-hidden text-wrap">
-                yadavshashank9@gmail.com
+              <p className="text-2xl break-word md:break-normal overflow-hidden text-wrap">
+                shashanky@vercenttechit.com
               </p>
             </div>
 

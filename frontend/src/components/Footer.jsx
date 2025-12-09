@@ -13,7 +13,7 @@ const Footer = () => {
             <hr className='w-20 mt-5' />
           </div>
 
-          <p>ZYROO Tech IT Services is one of the leading Software Development/Staff Augmentation/IT Staffing services providers in the US. We bring together the clients and the suitable candidates, building a community in the IT industry.
+          <p>Vercent Tech IT Services is one of the leading Software Development/Staff Augmentation/IT Staffing services providers in the US. We bring together the clients and the suitable candidates, building a community in the IT industry.
           </p>
           <div className='flex flex-col gap-3'>
             <h1 className='text-2xl'>Social Media Links</h1>
@@ -54,17 +54,25 @@ const Footer = () => {
           <h1 className='text-2xl'>Contact <hr className='mt-2 w-22' /></h1>
           <div className='flex flex-col gap-5 mt-5'>
             <div className='flex items-center gap-3'>
-              <i class="fa-solid fa-phone"></i>
-              <p>+91 9118623500</p>
+              <span >&#128222;</span>
+              <p>+1 (236) 305-8514</p>
             </div>
-            <div className='flex gap-3'>
-              <i class="fa-solid fa-location-dot"></i>
-              <p>ARAZi No. 178 ,yogendra vihar nayi basti ,khadepur - 208021</p>
+            <div className='flex gap-2'>
+              <p>&#x1F4CC;</p>
+              <p>257 Cornelison Avenue, Jersey City, New Jersey 07302</p>
             </div>
-            <div className='flex items-center gap-3'>
-              <i class="fa-solid fa-envelope"></i>
-              <p>yadavshashanksir9@gmail.com</p>
+
+            <div className='flex flex-col gap-3'>
+              <div className='flex gap-2'>
+                <span>&#128232;</span>
+                <p>Info@vercenttechit.com</p>
+              </div>
+              <div className='flex gap-2'>
+                <span>&#128232;</span>
+                <p>shashanky@vercenttechit.com</p>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
