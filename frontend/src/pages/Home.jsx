@@ -57,23 +57,23 @@ const Home = () => {
   const testimonials = [
     {
       name: "John Doe",
-      position: "CEO",
-      feedback: "Thanks to ZYROO Tech IT's USA IT Staffing Services, I found the perfect IT job quickly. Their expertise in the IT industry is unparalleled."
+      position: "Full Stack Developer",
+      feedback: "Thanks to Vercent Tech IT's USA IT Staffing Services, I found the perfect IT job quickly. Their expertise in the IT industry is unparalleled."
     },
     {
       name: "Jane Smith",
-      position: "CTO",
-      feedback: "ZYROO Tech IT made my job search stress-free. Their customized staffing solutions matched me with an ideal IT position."
+      position: "DevOps Engineer",
+      feedback: "Vercent Tech IT made my job search stress-free. Their customized staffing solutions matched me with an ideal IT position."
     },
     {
       name: "Mike Johnson",
-      position: "CFO",
-      feedback: "The team at ZYROO Tech IT provided exceptional support throughout my job search. Their industry knowledge and personalized approach helped me secure a great IT role."
+      position: "QA Analyst",
+      feedback: "The team at Vercent Tech IT provided exceptional support throughout my job search. Their industry knowledge and personalized approach helped me secure a great IT role."
     },
     {
       name: "Emily Davis",
-      position: "COO",
-      feedback: "I highly recommend ZYROO Tech IT for anyone seeking IT staffing services. Their professionalism and dedication to finding the right fit are unmatched."
+      position: "Business Analyst",
+      feedback: "I highly recommend Vercent Tech IT for anyone seeking IT staffing services. Their professionalism and dedication to finding the right fit are unmatched."
     }
   ]
 
@@ -177,7 +177,7 @@ const Home = () => {
       <section className='bg-blue-50 text-black py-5'>
         <div className='flex flex-col items-center gap-5 md:w-3/5 mx-auto text-center px-3 md:px-0'>
           <h1 className='text-xl md:text-3xl'>SIMPLIFIED CANDIDATE PLACEMENT PROCESS FROM RESUME BUILDING , IT TRAININGS TO PLACEMENT</h1>
-          <p className='text-md md:text-xl'>At Helix Tech, we follow a step-by-step process to place our candidates with relevant organizations. IT training & placements is one of our USP offerings to aspirant job seekers.</p>
+          <p className='text-md md:text-xl'>At Vercent Tech, we follow a step-by-step process to place our candidates with relevant organizations. IT training & placements is one of our USP offerings to aspirant job seekers.</p>
           <p className='text-lg md:text-xl'>Here's how we do it</p>
         </div>
 

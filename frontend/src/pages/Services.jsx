@@ -20,7 +20,7 @@ const Services = () => {
   const servicesList = [
     {
       title: "Career Advisor",
-      description: "The Assistance of career experts to introduce you to the ICOSYS Process how it works and what are the best ways to get the desired outcome.",
+      description: "The Assistance of career experts to introduce you to the Vercent Process how it works and what are the best ways to get the desired outcome.",
       icon: "fa-solid fa-user-tie"
     },
     {

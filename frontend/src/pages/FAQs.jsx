@@ -108,7 +108,7 @@ const FAQs = () => {
         <div className='w-full md:w-[80%] p-3 md:p-5 mx-auto flex flex-col gap-1'>
 
           <details >
-            <summary className='text-xl font-semibold bg-[#CFFF87] p-5 cursor-pointer'>1. How does the Icosys Tech-IT process work?</summary>
+            <summary className='text-xl font-semibold bg-[#CFFF87] p-5 cursor-pointer'>1. How does the Vercent Tech-IT process work?</summary>
             <p className='text-xl ml-2'>Icosys Tech-IT process works on five crucial areas. Let me take you through each one of them;</p>
             <div className='flex flex-col gap-3 p-3 md:p-5'>
 

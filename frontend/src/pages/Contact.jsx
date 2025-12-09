@@ -30,15 +30,14 @@ const Contact = () => {
 
             <div className="flex flex-col gap-5 md:gap-10">
               <p className="text-2xl">257 Cornelison Avenue, Jersey City, New Jersey 07302</p>
-              <p className="text-2xl">Block-N, Govind Nagar, Kanpur, Uttar Pradesh - 208006</p>
+              <p className="text-2xl">Block-Y, Kidwai Nagar, Uttar Pradesh(IND) - 208011</p>
             </div>
 
             <div className="flex items-center gap-5">
               <div className="text-2xl">
-                {/* <i class='fa-solid fa-phone'></i> */}
                 <span >&#128222;</span>
               </div>
-              <p className="text-2xl">+1 (201) 839-2986</p>
+              <p className="text-2xl">+1 (201) 839-2986 (USA)</p>
             </div>
 
             <div className="flex items-center gap-5">
