@@ -29,34 +29,34 @@ const Contact = () => {
             <h1 className="text-3xl font-bold ">Address</h1>
 
             <div className="flex flex-col gap-5 md:gap-10">
-              <p className="text-2xl">257 Cornelison Avenue, Jersey City, New Jersey 07302</p>
-              <p className="text-2xl">Block-Y, Kidwai Nagar, Uttar Pradesh(IND) - 208011</p>
+              <p className="text-xl md:text-2xl">257 Cornelison Avenue, Jersey City, New Jersey 07302</p>
+              <p className="text-xl md:text-2xl">Block-Y, Kidwai Nagar, Uttar Pradesh(IND) - 208011</p>
             </div>
 
             <div className="flex items-center gap-5">
-              <div className="text-2xl">
+              <div className="text-xl md:text-2xl">
                 <span >&#128222;</span>
               </div>
-              <p className="text-2xl">+1 (201) 839-2986 (USA)</p>
+              <p className="text-xl md:text-2xl">+1 (201) 839-2986 (USA)</p>
             </div>
 
             <div className="flex items-center gap-5">
-              <div className="text-2xl">
+              <div className="text-xl md:text-2xl">
                 <span>&#128232;</span>
               </div>
-              <p className="text-2xl break-word md:break-normal overflow-hidden text-wrap">
+              <p className="text-xl md:text-2xl break-word md:break-normal overflow-hidden text-wrap">
                 Info@vercenttechit.com
               </p>
 
             </div>
 
             <div className="flex items-center gap-5">
-              <div className="text-2xl">
+              <div className="text-xl md:text-2xl">
                 
                 <span>&#128232;</span>
 
               </div>
-              <p className="text-2xl break-word md:break-normal overflow-hidden text-wrap">
+              <p className="text-xl md:text-2xl break-word md:break-normal overflow-hidden text-wrap">
                 shashanky@vercenttechit.com
               </p>
             </div>
