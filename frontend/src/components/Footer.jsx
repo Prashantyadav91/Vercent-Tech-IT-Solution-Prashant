@@ -81,7 +81,7 @@ const Footer = () => {
         <hr className='text-white w-[90%] md:w-full mx-auto ' />
         <div className='flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-center md:mt-5 px-5 py-2 md:py-0'>
           <p className='text-sm'>Copyright © Vercent Tech IT Solution. All rights reserved.</p>
-          <p className='text-sm'><a target='_blank' href="https://www.linkedin.com/in/prashant-yadav-a524b1243/">Web Dev by Prashant</a> </p>
+          <p className='text-sm'><a target='_blank' href="https://www.linkedin.com/in/shashankyadavumanist/">Shashank Yadav</a> </p>
         </div>
 
       </div>
