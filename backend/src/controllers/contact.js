@@ -7,7 +7,7 @@ const getMessage = async (req,res) =>{
         res.status(200).json(message)
     }
     catch(err){
-        res.status(500).json({message :err.message})
+        res.status(400).json({message :err.message})
     }
 }
 
@@ -17,7 +17,7 @@ const getConsult = async (req,res) =>{
         res.status(200).json(consult)
     }
     catch(err){
-        res.status(500).json({message :err.message})
+        res.status(400).json({message :err.message})
     }
 }
 
@@ -52,7 +52,7 @@ const addConsult = async (req, res) => {
         res.json({ message: "Message sent successfully" }) //sending a response to frontend
     }
     catch (err) {
-        res.status(500).json({message :err.message})
+        res.status(400).json({message :err.message})
     }
 
 }

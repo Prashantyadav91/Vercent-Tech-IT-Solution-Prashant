@@ -1,7 +1,9 @@
 import {  useState } from "react"
 import axios from 'axios'
 
+
 const Contact = () => {
+  const API_URL = import.meta.env.VITE_API_URL; // variable name .env me VITE_API_URL
   const [name,setName] = useState('');
   const [email,setEmail] = useState('');
   const [number,setNumber] = useState('');
@@ -9,11 +11,13 @@ const Contact = () => {
   const [message,setMessage] = useState('');
 
   const handleSubmit = async () =>{
-    await axios.post('http://localhost:5000/api/contact/addQuiry',{name,email,number,enquiryType,message})
+    
+    await axios.post(`${API_URL}/api/contact/addQuiry`,{name,email,number,enquiryType,message})
     .then(()=>{
       alert("Message sent successfully")
     })
   }
+  
 
   return (
     <div className="mt-17 md:mt-25 bg-gray-100">
@@ -79,7 +83,7 @@ const Contact = () => {
 
               <div className="flex flex-col gap-2">
                 <label className="text-xl font-semibold" htmlFor="number">Your Phone No.</label>
-                <input onChange={(e)=>setNumber(e.target.value)} value={number} className="border p-3 text-xl" name="number" type="number" placeholder="type your number" />
+                <input onChange={(e)=>setNumber(e.target.value)} value={number} className="border p-3 text-xl" name="number" type="phone" placeholder="type your number" />
               </div>
 
               <div className="flex flex-col gap-2">

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 const ContactCompo = () => {
-
+    const API_URL = import.meta.env.VITE_API_URL; // variable name .env me VITE_API_URL
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
@@ -12,7 +12,7 @@ const ContactCompo = () => {
     const [technology, setTechnology] = useState('');
 
     const handleClick = async () => {
-        await axios.post('http://localhost:5000/api/contact/addConsult', { name, email, number, service, visaStatus,technology })
+        await axios.post(`${API_URL}/api/contact/addQuiry`, { name, email, number, service, visaStatus,technology })
         .then(() => {
             alert("Message sent successfully")
         })
@@ -43,7 +43,7 @@ const ContactCompo = () => {
                             <div className='text-xl'>
                                 <i class="fa-solid fa-phone"></i>
                             </div>
-                            <input onChange={(e) => setNumber(e.target.value)} value={number} className='rounded-r bg-white text-black px-2 py-2 w-full' type="number" placeholder='number' />
+                            <input onChange={(e) => setNumber(e.target.value)} value={number} className='rounded-r bg-white text-black px-2 py-2 w-full' type="phone" placeholder='number' />
                         </div>
 
                         <div className='rounde w-full md:w-[41%]  flex items-center gap-2 border-none outline-none'>

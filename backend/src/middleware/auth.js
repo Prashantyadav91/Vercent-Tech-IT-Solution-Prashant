@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const RevokedToken = require('../models/revokedToken');
-const JWT_SECRET = process.env.JWT_SECRET || 'mysecretkey';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const verifyToken = async (req, res, next) => {
   try {
