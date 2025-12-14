@@ -1,21 +1,42 @@
 import React from 'react'
 import assets from '../assets/assets'
-import { useEffect } from 'react'
-import axios from 'axios'
-import { useState } from 'react'
 
 const Services = () => {
-  const [services,setServices] = useState([]);
+  
 
-  useEffect(()=>{
-    axios.get('http://localhost:5000/api/service/getService')
-    .then((res)=>{
-      setServices(res.data)
-    })
-    .catch((err)=>{
-      console.error(err)
-    })
-  },[])
+  const service = [
+    {
+      title: "Career Advisor: What All You Get at This Level",
+      desc: "A Personal Career Advisor with Sound Technical Knowledge to understand your requirements and Expectations Quick Resolution of Queries at the Earliest in 24 hrs.",
+      image: assets.careerAdvisor
+    },
+    {
+      title: "Resume Optimization: What All You Get at This Level",
+      desc: "An Experienced Resume Building Team Prepared 1000’s Successful Resumes Designs CV that is the choice of the Recruiter.",
+      image: assets.resumeOpt
+    },
+    {
+      title: "Resume Marketing & Interview Scheduling: What All You Get at This Level",
+      desc: "Dedicated Personal Recruiter with Vast Experience in the Recruiting Market Get 25-50 in Technology Profile in a Week.",
+      image: assets.resumeMark
+    },
+    {
+      title: "Technical Training & Guidance: What All You Get at This Level",
+      desc: "A) One-on-One Training",
+      desc1: "B) Resume Awareness sessions",
+      desc2: "C) Mockup Interview Sessions",
+      desc3: "D) Industry Experts to Mentor",
+      desc4: "E) Weekly Webinars & Assessments",
+      image: assets.TechTrain
+    },
+    {
+      title: "Compliance, Onboarding, And Background Checks: What All You Get at This Level",
+      desc: "A) Helps in All Documentation Work",
+      desc1: "B) Quick & Easy Onboarding Process",
+      image: assets.onBoarding
+    }
+
+  ]
 
   const servicesList = [
     {
@@ -87,7 +108,7 @@ const Services = () => {
 
       <div className='flex flex-col items-center gap-10 py-5 md:py-10 px-3 md:px-0'>
         {
-          services.map((item, index) => (
+          service.map((item, index) => (
             <div className='w-full md:w-[80%] flex flex-col gap-5 md:gap-0 md:flex-row items-center justify-between py-5 px-4 md:px-10 bg-blue-400 text-white rounded-2xl' key={index}>
 
               <div className='order-2 md:order-1 flex flex-col gap-3 md:gap-7 w-full md:w-[45%] '>
@@ -99,11 +120,12 @@ const Services = () => {
                 <p className='text-xl md:text-2xl'>{item.desc4}</p>
               </div>
               <div className=' order-1 md:order-2 w-full md:w-[40%] '>
-                <img src={`http://localhost:5000/uploads/${item.image}`} alt="" />
+                <img src={item.image} alt="" />
               </div>
             </div>
           ))
         }
+
       </div>
 
 
