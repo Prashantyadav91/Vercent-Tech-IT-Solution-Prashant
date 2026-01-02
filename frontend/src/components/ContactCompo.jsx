@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
+import { motion } from 'framer-motion'
+import { FaEnvelope, FaPhone, FaUser } from 'react-icons/fa6';
 
 const ContactCompo = () => {
     const API_URL = import.meta.env.VITE_API_URL; // variable name .env me VITE_API_URL
@@ -19,7 +21,8 @@ const ContactCompo = () => {
     }
 
     return (
-        <div className='bg-gray-900 text-white flex flex-col items-center gap-10 py-10 px-3 md:px-10'>
+        <div 
+        className='bg-gray-900 text-white flex flex-col items-center gap-10 py-10 px-3 md:px-10'>
             <h1 className='text-2xl md:text-3xl'>GET IN TOUCH FOR A FREE CONSULTATION</h1>
             <div className='border py-10 w-full'>
                 <form className='flex flex-col gap-8' action="">
@@ -27,21 +30,21 @@ const ContactCompo = () => {
 
                         <div className='rounded bg-black md:w-[40%] pl-2 flex items-center gap-2 border-none outline-none'>
                             <div className='text-xl'>
-                                <i class="fa-solid fa-user"></i>
+                                <FaUser/>
                             </div>
                             <input onChange={(e) => setName(e.target.value)} value={name} className='rounded-r bg-white text-black px-2 py-2 w-full' type="text" placeholder='name' />
                         </div>
 
                         <div className='rounded bg-black md:w-[40%] pl-2 flex items-center gap-2 border-none outline-none'>
                             <div className='text-xl'>
-                                <i class="fa-solid fa-envelope"></i>
+                                <FaEnvelope/>
                             </div>
                             <input onChange={(e) => setEmail(e.target.value)} value={email} className='rounded-r bg-white text-black px-2 py-2 w-full' type="email" placeholder='email' />
                         </div>
 
                         <div className='rounded bg-black md:w-[40%] pl-2 flex items-center gap-2 border-none outline-none'>
                             <div className='text-xl'>
-                                <i class="fa-solid fa-phone"></i>
+                                <FaPhone/>
                             </div>
                             <input onChange={(e) => setNumber(e.target.value)} value={number} className='rounded-r bg-white text-black px-2 py-2 w-full' type="phone" placeholder='number' />
                         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import assets from '../assets/assets'
+import { FaEnvelope, FaPhone, FaLocationDot, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -19,9 +20,9 @@ const Footer = () => {
             <h1 className='text-2xl'>Social Media Links</h1>
             <hr className='w-15' />
             <div className='flex gap-5 text-2xl' >
-              <a href='https://www.instagram.com/rudrayadav91_18/' target='_blank'><i class="fa-brands fa-instagram"></i></a>
-              <a href='#'><i class="fa-brands fa-x-twitter"></i></a>
-              <a href='https://www.linkedin.com/in/shashankyadavumanist/' target='_blank'><i class="fa-brands fa-linkedin"></i></a>
+              <a href='https://www.instagram.com/vercent_tech_it_solution/' target='_blank'><FaInstagram /></a>
+              <a href='#'><FaXTwitter/></a>
+              <a href='https://www.linkedin.com/company/vercent-tech-it-solution/posts/?feedView=all' target='_blank'><FaLinkedin/></a>
             </div>
           </div>
         </div>
@@ -54,21 +55,21 @@ const Footer = () => {
           <h1 className='text-2xl'>Contact <hr className='mt-2 w-22' /></h1>
           <div className='flex flex-col gap-5 mt-5'>
             <div className='flex items-center gap-3'>
-              <span >&#128222;</span>
+              <FaPhone />
               <p>+1 (201) 839-2986 (USA)</p>
             </div>
             <div className='flex gap-2'>
-              <p>&#x1F4CC;</p>
+              <FaLocationDot className='mt-1' />
               <p>257 Cornelison Avenue, Jersey City, New Jersey 07302</p>
             </div>
 
-            <div className='flex flex-col gap-3'>
-              <div className='flex gap-2'>
-                <span>&#128232;</span>
+            <div className='flex  flex-col gap-3'>
+              <div className='flex items-center gap-2'>
+                <FaEnvelope />
                 <p>info@vercenttechit.com</p>
               </div>
-              <div className='flex gap-2'>
-                <span>&#128232;</span>
+              <div className='flex items-center gap-2'>
+                <FaEnvelope />
                 <p>shashanky@vercenttechit.com</p>
               </div>
             </div>
@@ -79,9 +80,8 @@ const Footer = () => {
 
       <div className='md:h-15 w-full md:w-[90%] mx-auto'>
         <hr className='text-white w-[90%] md:w-full mx-auto ' />
-        <div className='flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-center md:mt-5 px-5 py-2 md:py-0'>
-          <p className='text-sm'>Copyright © Vercent Tech IT Solution. All rights reserved.</p>
-          <p className='text-sm'><a target='_blank' href="https://www.linkedin.com/in/shashankyadavumanist/">Shashank Yadav</a> </p>
+        <div className='flex justify-center items-center px-auto py-3 md:py-5'>
+          <p className='text-xs md:text-sm'>Copyright © Vercent Tech IT Solution. All rights reserved.</p>
         </div>
 
       </div>

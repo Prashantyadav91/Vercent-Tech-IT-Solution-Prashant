@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import assets from '../assets/assets'
 
 
+
 const Hero = () => {
 
-  
+  const images = [assets.backgroundImg, assets.backgroundImg2, assets.backgroundImg3]
+
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
-    <div className={` flex items-center justify-center h-screen bg-[url(/src/assets/background.png)]`}>
+    <div className={` flex items-center justify-center h-screen`}
+      style={{
+        backgroundImage: `url(${images[current]})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
 
       <div className="h-screen absolute inset-0 bg-black/80"></div>
 
@@ -31,7 +47,7 @@ const Hero = () => {
           <div className='font-light flex flex-col md:flex-row gap-3 md:gap-5'><p> <span className='text-yellow-200'>★ ★ ★ ★ ★</span> 4.9/5-2500+ Reviews</p><p>Trustes by 500+ hring partners</p></div>
           <Link
             to="/about"
-            className="border border-white text-white py-4 px-11 w-fit mx-auto md:mx-0 rounded-full hover:bg-white hover:text-black transition duration-300"
+            className=" border-2 border-white text-white py-4 px-11 w-fit mx-auto md:mx-0 rounded-full hover:bg-blue-900 transition duration-300"
           >
             Explore more
           </Link>
@@ -39,7 +55,6 @@ const Hero = () => {
         </div>
 
       </div>
-
 
     </div>
   )

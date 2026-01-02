@@ -2,6 +2,10 @@ import React from 'react'
 import Hero from '../components/Hero'
 import assets from '../assets/assets'
 import ContactCompo from '../components/ContactCompo'
+import { motion } from 'framer-motion'
+import { FaClock, FaProjectDiagram, FaUser, FaFile, FaTrophy } from "react-icons/fa";
+import { GiGraduateCap } from "react-icons/gi";
+import Counter from '../components/Counter'
 
 const Home = () => {
 
@@ -9,22 +13,22 @@ const Home = () => {
     {
       title: "Career Advisor",
       description: "This Assistance of career experts to intoduce you to the vercent Process how it works and...",
-      icon: 'fa-user-tie'
+      icon: FaUser
     },
     {
       title: "Resume Optmization",
       description: "Your resume creates the first impact on your interview. So our resume optimization...",
-      icon: 'fa-file'
+      icon: FaFile
     },
     {
       title: "Resume Marketing",
       description: "Our Resume Marketing & Interview Scheduling Team will connect with you to understand what…",
-      icon: 'fa-file'
+      icon: FaFile
     },
     {
       title: "Compliance Onboarding",
       description: "Once you get a job our experts in this department will assist you with all the required…",
-      icon: 'fa-trophy'
+      icon: FaTrophy
     }
   ]
 
@@ -86,7 +90,12 @@ const Home = () => {
         {/* first half */}
         <div className='flex flex-col md:flex-row items-start justify-center gap-0 md:gap-10 pt-10'>
 
-          <div className='order-2 md:order-1 flex flex-col gap-5 md:gap-10 w-full md:w-[40%] px-3 md:px-0'>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: 'easeOut' }}
+            viewport={{ once: false, amount: 0.2 }}
+            className='order-2 md:order-1 flex flex-col gap-5 md:gap-10 w-full md:w-[40%] px-3 md:px-0'>
 
             <div className='flex flex-col gap-5'>
               <h2 className='text-3xl'>Our goal is to attain your expectations</h2>
@@ -96,15 +105,25 @@ const Home = () => {
             <p className='text-xl md:text-2xl font-light'>With Vercent Tech IT Services, you get to experience a unique journey that starts along with learning and upgrading your skills through staffing solutions which will start with resume building and will end up with you landing a job at your dream company.</p>
 
             <p className='text-xl md:text-2xl font-light'>Keeping in mind current market needs and your knowledge, we will help you to get whole detailed IT training through which you can get hold of all the current trends which will help you to keep up with knowledge regarding that and can make you the best candidate for the recruiter.</p>
-          </div>
+          </motion.div>
 
-          <div className='order-1 md:order-2 mb-20 px-5 md:px-0 w-full md:w-[40%]'>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: 'easeOut' }}
+            viewport={{ once: false, amount: 0.2 }}
+            className='order-1 md:order-2 mb-20 px-5 md:px-0 w-full md:w-[40%]'>
             <img className='w-150' src={assets.office} alt="" />
-          </div>
+          </motion.div>
         </div>
 
         {/* second-half */}
-        <div className='w-full md:w-7/10 mx-auto'>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: 'easeOut' }}
+          viewport={{ once: false, amount: 0.2 }}
+          className='mt-5 w-full md:w-7/10 mx-auto'>
 
           <div className='flex flex-col gap-5 px-2 md:px-0'>
             <p className='text-3xl text-center'>OUR SERVICES</p>
@@ -117,7 +136,7 @@ const Home = () => {
               services.map((item, index) => (
                 <div key={index} className='flex gap-2 w-full md:w-[49%] px-3 md:px-0'>
                   <div className='mt-1 text-2xl text-blue-300'>
-                    <i class={`fa-solid ${item.icon}`}></i>
+                    <item.icon/>
                   </div>
                   <div className=''>
                     <h2 className='text-2xl font-semibold'>{item.title}</h2>
@@ -128,7 +147,7 @@ const Home = () => {
             }
           </div>
 
-        </div>
+        </motion.div>
 
       </section>
 
@@ -137,36 +156,46 @@ const Home = () => {
 
           <div className='flex flex-col items-center gap-4 w-full md:w-[20%]'>
             <div className='text-4xl'>
-              <i class="fa-solid fa-clock"></i>
+              <FaClock />
             </div>
-            <p className='text-3xl'>7+</p>
+            <p className='text-3xl'>
+              <Counter value={7} />
+            </p>
             <p className='text-xl'>YEARS OF EXPERIENCE</p>
             <p className='text-center text-lg'>Over 7+ years of experience in the industry, revolutionising digital solutions globally.</p>
           </div>
 
           <div className='flex flex-col items-center gap-4 w-full md:w-[20%]'>
             <div className='text-4xl'>
-              <i class="fa-solid fa-diagram-project"></i>
+              
+              <FaProjectDiagram/>
             </div>
-            <p className='text-3xl'>50+</p>
+            <p className='text-3xl'>
+              <Counter value={50} />
+            </p>
             <p className='text-xl'>PROJECTS COMPLETED</p>
             <p className='text-center text-lg'>Igniting innovation through delivering to 500+ ventures and surpassing client expectations.</p>
           </div>
 
           <div className='flex flex-col items-center gap-4 w-full md:w-[20%]'>
             <div className='text-4xl'>
-              <i class="fa-solid fa-user"></i>
+              
+              <FaUser/>
             </div>
-            <p className='text-3xl'>700+</p>
+            <p className='text-3xl'>
+              <Counter value={700} />
+            </p>
             <p className='text-xl'>PLACEMENT DONE</p>
             <p className='text-center text-lg'>Fuelling career growth 200+ number of placements, connecting dreams with opportunities.</p>
           </div>
 
           <div className='flex flex-col items-center gap-4 w-full md:w-[20%]'>
-            <div className='text-4xl'>
-              <i class="fa-solid fa-graduation-cap"></i>
+            <div className='text-5xl'>
+              <GiGraduateCap/>
             </div>
-            <p className='text-3xl'>400+</p>
+            <p className='text-3xl'>
+              <Counter value={400} />
+            </p>
             <p className='text-xl'>STUDENTS TRAINED</p>
             <p className='text-center text-lg'>Trained 100+ students which cultivates tomorrow's tech leaders, empowering them with advanced skills and knowledge.</p>
           </div>
@@ -175,19 +204,29 @@ const Home = () => {
       </section>
 
       <section className='bg-blue-50 text-black py-5'>
-        <div className='flex flex-col items-center gap-5 md:w-3/5 mx-auto text-center px-3 md:px-0'>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: 'easeOut' }}
+          viewport={{ once: false, amount: 0.2 }}
+          className='flex flex-col items-center gap-5 md:w-3/5 mx-auto text-center px-3 md:px-0'>
           <h1 className='text-xl md:text-3xl'>SIMPLIFIED CANDIDATE PLACEMENT PROCESS FROM RESUME BUILDING , IT TRAININGS TO PLACEMENT</h1>
           <p className='text-md md:text-xl'>At Vercent Tech, we follow a step-by-step process to place our candidates with relevant organizations. IT training & placements is one of our USP offerings to aspirant job seekers.</p>
           <p className='text-lg md:text-xl'>Here's how we do it</p>
-        </div>
+        </motion.div>
 
         <div className='flex flex-wrap  gap-10 py-5 mt-10 px-3 md:px-25'>
           {
             process.map((item, index) => (
-              <div key={index} className="flex flex-col gap-5 w-full md:w-[40%] border border-black mx-auto p-6">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, ease: 'easeOut' }}
+                viewport={{ once: false, amount: 0.2 }}
+                key={index} className="flex flex-col gap-5 w-full md:w-[40%] shadow-custom-lg rounded-2xl bg-white mx-auto p-6">
                 <h1 className='text-xl md:text-2xl font-semibold'>{item.title}</h1>
                 <p className='text-md md:text-lg'>{item.description}</p>
-              </div>
+              </motion.div>
             ))
           }
         </div>
@@ -195,19 +234,29 @@ const Home = () => {
       </section>
 
       <section className='py-5'>
-        <div className='flex flex-col items-center gap-5 mb-5 px-3 md:px-100'>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: 'easeOut' }}
+          viewport={{ once: false, amount: 0.2 }}
+          className='flex flex-col items-center gap-5 mb-5 px-3 md:px-100'>
           <h1 className='text-3xl'>TESTIMONIAL</h1>
           <hr className='w-20 text-black' />
           <p className='text-xl text-center'>Read what our valued clients have shared about their experiences with our services in our client testimonials.</p>
-        </div>
+        </motion.div>
 
         <div className='flex flex-col md:flex-row flex-wrap gap-10 p-5 justify-evenly items-center'>
 
           {
             testimonials.map((item, index) => (
-              <div key={index} className='w-full md:w-[40%] flex gap-3 shadow-custom p-5'>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, ease: 'easeOut' }}
+                viewport={{ once: false, amount: 0.2 }}
+                key={index} className='w-full md:w-[40%] flex gap-3 shadow-custom p-5'>
                 <div className='text-4xl'>
-                  <i class="fa-solid fa-user"></i>
+                  <FaUser/>
                 </div>
                 <div>
                   <div className='flex flex-col'>
@@ -218,7 +267,7 @@ const Home = () => {
                     <p className='text-lg md:text-2xl font-light'>{item.feedback}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))
           }
 
